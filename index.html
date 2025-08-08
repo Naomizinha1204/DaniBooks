@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DaniBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unlock&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Fantasia</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Romance</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Ficção Cientifica</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Suspense</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Terror</a>
+        </li>
+      </ul>
+      <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+    
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão" />
+        <label for="opções-menu" class="opções__rotulo">
+          <li class="opções__item">Categorias</li>
+        </label>
+
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Fantasia</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Romance</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Ficção Cientifica</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Suspense</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Terror</a>
+          </li>
+        </ul>
+        <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+        <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+      </ul>
+
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+          class="container__imagem container__imagem-transparente"></a>
+      <a href="#" class="container__link">
+        <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+        <p class="container__texto">Minha sacola</p>
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+        <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar a se aventurar?</h2>
+    <p class="banner__texto">Entre e descubra uma nova historia para se emocionar</p>
+    <input type="search" class="banner__pesquisa" placeholder="Quem você irá se tornar hoje?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Histórias de se arrepiar</h2>
+    
+    <div class="carrossel__container">
+      <!-- Slider main container -->
+      <div class="swiper">
+
+      <div class="swiper-pagination"></div>
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/É assim que acaba.jpg"
+            alt="Lily Bloom decide começar uma nova vida em Boston e tentar abrir o seu próprio negócio. Como consequência de sua mudança de vida, Lily acredita que encontrou o amor verdadeiro com Ryle, um charmoso neurocirurgião."></div>
+        <div class="swiper-slide"><img src="img/Amor e Gelato.jpg"
+            alt="Um verão na Itália, uma antiga história de amor e um segredo de famíliaDepois da morte da mãe, Lina fica com a missão de realizar um último pedido: ir até a Itália para conhecer o pai"></div>
+        <div class="swiper-slide"><img src="img/O duque e eu.jpg" alt="O livro que inspirou a série Bridgerton na Netflix.Os livros de Julia Quinn já passaram da marca de 20 milhões de exemplares vendidos, sendo mais de 3 milhões no Brasil."">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/it a coisa.jfif" alt="Nesse clássico que inspirou os filmes da Warner, um grupo de amigos conhecido como Clube dos Otários aprende o real sentido da amizade, do amor, da confiança... e do medo. O mais profundo e tenebroso medo. " />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/corrupt.jpg" alt="Best-seller do New York Times, Penelope Douglas, traz este novo romance dark... Erika Sempre me disseram que os sonhos eram os desejos do nosso coração. Meus pesadelos, no entanto, acabaram se tornando minha obsessão. O nome dele é Michael Crist" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/credence.jpg" alt="Tiernan de Haas não liga para mais nada. Filha única de um produtor de cinema e sua esposa estrela, ela cresceu com riquezas e privilégio, mas sem amor ou orientação. Enviada para colégios internos desde cedo, era impossível escapar da solidão e criar uma vida para si própria. A sombra da fama de seus pais a segue por todo lugar." />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">A maior plataforma de leitura</h3>
+          <h2 class="descrição__titulo-livro">Kindle</h2>
+          <p class="descrição__texto">
+            Com um oferecimento de Amazon
+          </p>
+        </div>
+        <img src="img/kindle.jfif" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/credence.jpg"
+            alt="Tiernan de Haas não liga para mais nada. Filha única de um produtor de cinema e sua esposa estrela, ela cresceu com riquezas e privilégio, mas sem amor ou orientação. Enviada para colégios internos desde cedo, era impossível escapar da solidão e criar uma vida para si própria. A sombra da fama de seus pais a segue por todo lugar"></div>
+        <div class="swiper-slide"><img src="img/corrupt.jpg" alt="Best-seller do New York Times, Penelope Douglas, traz este novo romance dark... Erika Sempre me disseram que os sonhos eram os desejos do nosso coração. Meus pesadelos, no entanto, acabaram se tornando minha obsessão. O nome dele é Michael Crist">
+        </div>
+        <div class="swiper-slide"><img src="img/it a coisa.jfif" alt="Nesse clássico que inspirou os filmes da Warner, um grupo de amigos conhecido como Clube dos Otários aprende o real sentido da amizade, do amor, da confiança... e do medo. O mais profundo e tenebroso medo. " />
+        </div>
+        <div class="swiper-slide"><img src="img/O duque e eu.jpg" alt="O livro que inspirou a série Bridgerton na Netflix.Os livros de Julia Quinn já passaram da marca de 20 milhões de exemplares vendidos, sendo mais de 3 milhões no Brasil."> </div>
+        <div class="swiper-slide"><img src="img/Amor e Gelato.jpg" alt="Um verão na Itália, uma antiga história de amor e um segredo de famíliaDepois da morte da mãe, Lina fica com a missão de realizar um último pedido: ir até a Itália para conhecer o pai"></div>
+        <div class="swiper-slide"><img src="img/É assim que acaba.jpg" alt="Lily Bloom decide começar uma nova vida em Boston e tentar abrir o seu próprio negócio. Como consequência de sua mudança de vida, Lily acredita que encontrou o amor verdadeiro com Ryle, um charmoso neurocirurgião."></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Autora do Mês</h3>
+          <h2 class="descrição__titulo-livro">Colleen Hoover</h2>
+          <p class="descrição__texto">Colleen Hoover, nascida Margaret Colleen Fennell é uma escritora norte-americana que escreve principalmente livros que abordam como tema central traumas, violências e a exposição de relacionamentos tóxicos, ambientado no gênero "romântico" de ficção para jovens adultos.
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="img/collen hoover.webp" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Android</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">DarkRomance</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Drama</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Suspense</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Terror Psicologico</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Ação e aventura</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Horror</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Ficção Policial</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">
+      Atualizações de e-books, novos livros, promoções e outros.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Dani</h2>
+    <li class="lista-rodapé__item">
+      <img src="img/Alura.svg" alt="Logo da Alura" />
+      <a href="#" class="lista-rodapé__link">Alura</a>
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/AluraEmpresas.svg" alt="Logo da AluraParaEmpresas" />
+      <a href="#" class="lista-rodapé__link">Alura para Empresas</a>
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/AluraLATAM.svg" alt="Logo da Alura Latam" />
+      <a href="#" class="lista-rodapé__link">Alura LATAM</a>
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/AluraStart.svg" alt="Logo da Alura START" />
+      <a href="#" class="lista-rodapé__link">Alura Start</a>
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/MusicDot.svg" alt="Logo da Music Dot" />
+      <a href="#" class="lista-rodapé__link">Music Dot</a>
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/AluraLingua.svg" alt="Logo da Alura Lingua" />
+      <a href="#" class="lista-rodapé__link">Alura Língua</a>
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/PM3.svg" alt="Logo da PM3" />
+      <a href="#" class="lista-rodapé__link">PM3</a>
+    </li>
+  </ul>
+
+  <ul class="lista-rodapé">
+    <li class="lista-rodapé__titulo">Comunidade</li>
+    <li class="lista-rodapé__item">
+      <img src="img/HipstersTech.svg" alt="Logo do Hipsters ponto Tech" />
+      <a href="#" class="lista-rodapé__link">Hipsters ponto Tech</a>
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/ScubaDev.svg" alt="Logo do Scuba Dev" />
+      <a href="#" class="lista-rodapé__link">Scuba Dev</a>
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/LayersTech.svg" alt="Logo do Layers ponto Tech" />
+      <a href="#" class="lista-rodapé__link">Layers ponto Tech</a>
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/LikeABoss.svg" alt="Logo do Like a Boss" />
+      <a href="#" class="lista-rodapé__link">Like a Boss</a>
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/CarreiraSemFronteira.svg" alt="Logo do Carreira sem fronteiras" />
+      <a href="#" class="lista-rodapé__link">Carreira sem fronteiras</a>
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/HipstersJobs.svg" alt="Logo do Hipsters ponto jobs" />
+      <a href="#" class="lista-rodapé__link">Hipsters ponto jobs</a>
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/GUJ.svg" alt="Logo do GUJ" />
+      <a href="#" class="lista-rodapé__link">GUJ</a>
+    </li>
+  </ul>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".swiper", {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+  });
+</script>
+</body>
